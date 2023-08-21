@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class RestControllerMapping {
 
     @RequestMapping("restController")
-    public String restController () {
+    public String[] restController() {
 
-        return "restController 메서드 문자열";
+        return new String[]{"restController 메서드 문자열", "배열"};
     }
 
 }
